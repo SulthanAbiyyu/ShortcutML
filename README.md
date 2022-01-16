@@ -65,7 +65,7 @@ df["text"] = df["text"].apply(tci.all_preprocessing)
 - [x] TextCleaningIndo
 - [ ] TextCleaningEnglish
 - [ ] Fully customizable component
-- [ ] FastFeatureSelection -> Pearson, Lasso, Chi Squared, ..
+- [ ] FeatureSelection -> Pearson, Lasso, Chi Squared, ..
 - [ ] AutoGridSearch
 - [ ] ..
 

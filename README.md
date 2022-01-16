@@ -10,7 +10,7 @@ Sometimes we don’t want to pay attention to detail very much. We are in a hurr
 
 ```bash
 # Clone the repo
-$ git clone <URL>
+$ git clone https://github.com/SulthanAbiyyu/ShortcutML
 
 # Change working dir to shortcutml
 $ cd shortcutml

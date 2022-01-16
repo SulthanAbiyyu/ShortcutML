@@ -4,7 +4,7 @@
 
 ## Description
 
-Sometimes we don’t want to pay attention to detail very much. We are in a hurry and only need to prototype our ideas as fast as possible. Maybe this library is for you. It’s not making any magic optimization or something like that, it’s summarising all code that maybe you would write when in this kind of situation. This library uses scikit-learn, matplotlib, seaborn, pandas, numpy, and NLTK. In the future, this library will be fully customizable. You can choose machine learning models and custom scoring.
+Sometimes, we don’t want to pay attention to detail very much in some machine learning phase. We are in a hurry and only need to prototype our ideas as fast as possible. Then, this library is for you. It’s not making any magic optimization, but it’s summarising all code that maybe you would write when in this kind of situation. This library will be fully customizable from model selection until scoring metrics in the future.
 
 ## Installation
 

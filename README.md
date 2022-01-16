@@ -61,13 +61,13 @@ df["text"] = df["text"].apply(tci.all_preprocessing)
 
 ## Project Plan
 
-[x] BaselineModel
-[x] TextCleaningIndo
-[] TextCleaningEnglish
-[] Fully customizable component
-[] FastFeatureSelection -> Pearson, Lasso, Chi Squared, ..
-[] AutoGridSearch
-[] ..
+- [x] BaselineModel
+- [x] TextCleaningIndo
+- [] TextCleaningEnglish
+- [] Fully customizable component
+- [] FastFeatureSelection -> Pearson, Lasso, Chi Squared, ..
+- [] AutoGridSearch
+- [] ..
 
 ## Contributing
 

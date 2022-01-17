@@ -27,7 +27,7 @@ $ python3 setup.py
 ### BaselineModel
 
 ```python
-from shortcutml import BaselineModel
+from shortcutml.model_selection import BaselineModel
 
 bm = BaselineModel()
 
@@ -51,7 +51,7 @@ bm.regression_models()
 ### TextCleaningIndo
 
 ```python
-from shortcutml import TextCleaningIndo
+from shortcutml.preprocessing import TextCleaningIndo
 
 tci = TextCleaningIndo()
 
@@ -66,7 +66,7 @@ df["text"] = df["text"].apply(tci.all_preprocessing)
 - [ ] TextCleaningEnglish
 - [ ] Fully customizable component
 - [ ] FeatureSelection -> Pearson, Lasso, Chi Squared, ..
-- [ ] AutoGridSearch
+- [x] AutoSearchCV -> Random and Grid
 - [ ] ..
 
 ## Contributing
@@ -77,6 +77,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
------
+---
+
 Sulthan Abiyyu, \
 16 January 2022

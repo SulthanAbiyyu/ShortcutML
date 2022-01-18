@@ -8,6 +8,9 @@ Sometimes, we don’t want to pay attention to detail very much in some machine 
 
 ## Installation
 
+\
+Via git clone
+
 ```bash
 # Clone the repo
 $ git clone https://github.com/SulthanAbiyyu/ShortcutML
@@ -20,6 +23,18 @@ $ python3 -m pip install -r requirements.txt
 
 # Run one-time setup
 $ python3 install.py
+```
+
+Via pip
+
+```bash
+# Install via pip
+$ pip install shortcutml
+
+# Download nltk punkt
+$ python
+>> import nltk
+>> nltk.download("punkt")
 ```
 
 ## Usage

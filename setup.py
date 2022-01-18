@@ -1,25 +1,26 @@
-import pathlib
-from setuptools import setup, find_packages
-from distutils.core import setup
+import setuptools
 
-HERE = pathlib.Path(__file__).parent
-README = (HERE / "README.md").read_text()
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
 
-setup(
+setuptools.setup(
     name='shortcutml',
-    packages=['shortcutml'],
-    version='0.3',
+    packages=['shortcutml.model_selection',
+              'shortcutml.preprocessing', ],
+    package_dir={
+        "shortcutml": "./shortcutml",
+    },
+    version='0.5',
 
     license='MIT',
-    # Give a short description about your library
     description='Machine learning baseline prototyping tools',
-    long_description=README,
+    long_description=long_description,
     long_description_content_type="text/markdown",
     author='Sulthan Abiyyu Hakim',
     author_email='sabiyyuhakim@student.ub.ac.id',
     url='https://github.com/SulthanAbiyyu/ShortcutML',
 
-    download_url='https://github.com/SulthanAbiyyu/ShortcutML/archive/refs/tags/0.3.tar.gz',
+    download_url='https://github.com/SulthanAbiyyu/ShortcutML/archive/refs/tags/0.5.tar.gz',
 
     keywords=['machine learning', 'summary'],
     install_requires=[
@@ -42,6 +43,5 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
-    packages=find_packages(where="src"),
-    package_dir={'': 'src'},
+
 )

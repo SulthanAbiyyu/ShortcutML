@@ -2,29 +2,28 @@ import pathlib
 from setuptools import setup
 from distutils.core import setup
 
-# The directory containing this file
-HERE = pathlib.Path(__file__).parent
 
-# The text of the README file
+HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
 setup(
-    name='shortcutml',         # How you named your package folder (MyLib)
-    packages=['shortcutml'],   # Chose the same as "name"
-    version='0.1',      # Start with a small number and increase it with every change you make
+    name='shortcutml',
+    packages=['shortcutml'],
+    version='0.1',
 
     license='MIT',
     # Give a short description about your library
-    description='TYPE YOUR DESCRIPTION HERE',
-    author='Sulthan Abiyyu Hakim',                   # Type in your name
-    author_email='sabiyyuhakim@student.ub.ac.id',      # Type in your E-Mail
-    # Provide either the link to your github or to your website
+    description='Machine learning baseline prototyping tools',
+    long_description=README,
+    long_description_content_type="text/markdown",
+    author='Sulthan Abiyyu Hakim',
+    author_email='sabiyyuhakim@student.ub.ac.id',
     url='https://github.com/SulthanAbiyyu/ShortcutML',
-    # I explain this later on
+
     download_url='https://github.com/SulthanAbiyyu/ShortcutML/archive/refs/tags/v_01.tar.gz',
-    # Keywords that define your package best
+
     keywords=['machine learning', 'summary'],
-    install_requires=[            # I get to this in a second
+    install_requires=[
         "joblib",
         "lightgbm",
         "matplotlib",

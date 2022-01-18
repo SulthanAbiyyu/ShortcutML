@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text()
 setup(
     name='shortcutml',
     packages=['shortcutml'],
-    version='0.1',
+    version='0.02',
 
     license='MIT',
     # Give a short description about your library
@@ -20,7 +20,7 @@ setup(
     author_email='sabiyyuhakim@student.ub.ac.id',
     url='https://github.com/SulthanAbiyyu/ShortcutML',
 
-    download_url='https://github.com/SulthanAbiyyu/ShortcutML/archive/refs/tags/v_01.tar.gz',
+    download_url='https://github.com/SulthanAbiyyu/ShortcutML/archive/refs/tags/0.02.tar.gz',
 
     keywords=['machine learning', 'summary'],
     install_requires=[

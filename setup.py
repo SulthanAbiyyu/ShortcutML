@@ -10,7 +10,7 @@ setuptools.setup(
     package_dir={
         "shortcutml": "./shortcutml",
     },
-    version='0.5',
+    version='0.6',
 
     license='MIT',
     description='Machine learning baseline prototyping tools',
@@ -20,14 +20,13 @@ setuptools.setup(
     author_email='sabiyyuhakim@student.ub.ac.id',
     url='https://github.com/SulthanAbiyyu/ShortcutML',
 
-    download_url='https://github.com/SulthanAbiyyu/ShortcutML/archive/refs/tags/0.5.tar.gz',
+    download_url='https://github.com/SulthanAbiyyu/ShortcutML/archive/refs/tags/0.6.tar.gz',
 
     keywords=['machine learning', 'summary'],
     install_requires=[
         "joblib",
         "lightgbm",
         "matplotlib",
-        "nltk",
         "numpy",
         "pandas",
         "PySastrawi",

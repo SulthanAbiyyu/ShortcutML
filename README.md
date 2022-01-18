@@ -19,7 +19,7 @@ $ cd shortcutml
 $ python3 -m pip install -r requirements.txt
 
 # Run one-time setup
-$ python3 setup.py
+$ python3 install.py
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ $ python3 setup.py
 ```python
 from shortcutml.model_selection import BaselineModel
 
-bm = BaselineModel()
+bm = BaselineModel(type="regression") # other type option: "classification"
 
 # Evaluate baseline model
 bm.evaluate(X_train, X_test, y_train, y_test)
@@ -57,6 +57,17 @@ tci = TextCleaningIndo()
 
 # Applying all preprocessing process
 df["text"] = df["text"].apply(tci.all_preprocessing)
+```
+
+### AutoSearchCV
+
+```python
+from shortcutml.model_selection import AutoSearchCV
+
+search = AutoSearchCV(model, type="grid") # other type option: "random"
+search.search(X,y)
+
+search.cv_results_
 ```
 
 ## Project Plan

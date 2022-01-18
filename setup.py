@@ -1,7 +1,6 @@
 import pathlib
-from setuptools import setup
+from setuptools import setup, find_packages
 from distutils.core import setup
-
 
 HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
@@ -9,7 +8,7 @@ README = (HERE / "README.md").read_text()
 setup(
     name='shortcutml',
     packages=['shortcutml'],
-    version='0.02',
+    version='0.3',
 
     license='MIT',
     # Give a short description about your library
@@ -20,7 +19,7 @@ setup(
     author_email='sabiyyuhakim@student.ub.ac.id',
     url='https://github.com/SulthanAbiyyu/ShortcutML',
 
-    download_url='https://github.com/SulthanAbiyyu/ShortcutML/archive/refs/tags/0.02.tar.gz',
+    download_url='https://github.com/SulthanAbiyyu/ShortcutML/archive/refs/tags/0.3.tar.gz',
 
     keywords=['machine learning', 'summary'],
     install_requires=[
@@ -43,4 +42,6 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
+    packages=find_packages(where="src"),
+    package_dir={'': 'src'},
 )

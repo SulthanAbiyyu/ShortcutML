@@ -9,6 +9,13 @@ Sometimes, we don’t want to pay attention to detail very much in some machine 
 ## Installation
 
 \
+Via pip
+
+```bash
+# Install via pip
+$ pip install shortcutml
+```
+
 Via git clone
 
 ```bash
@@ -25,20 +32,9 @@ $ python3 -m pip install -r requirements.txt
 $ python3 install.py
 ```
 
-Via pip
-
-```bash
-# Install via pip
-$ pip install shortcutml
-
-# Download nltk punkt
-$ python
->> import nltk
->> nltk.download("punkt")
-```
-
 ## Usage
 
+<br />
 ### BaselineModel
 
 ```python
@@ -94,13 +90,14 @@ search.cv_results_
 - [ ] FeatureSelection -> Pearson, Lasso, Chi Squared, ..
 - [x] AutoSearchCV -> Random and Grid
 - [ ] ..
+      <br />
 
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-\
 
 ---
 
-Sulthan Abiyyu, \
+<br />
+Sulthan Abiyyu, <br />
 16 January 2022

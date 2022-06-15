@@ -88,7 +88,7 @@ search.cv_results_
 - [x] TextCleaningIndo
 - [ ] TextCleaningEnglish
 - [ ] Fully customizable component
-- [ ] FeatureSelection -> Pearson, Lasso, Chi Squared, ..
+- [x] FeatureSelection -> Pearson, Lasso, Chi Squared, ..
 - [x] AutoSearchCV -> Random and Grid
 - [ ] ..
       <br />

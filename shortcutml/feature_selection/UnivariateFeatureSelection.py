@@ -144,16 +144,19 @@ class UnivariateFeatureSelection:
             plt.figure(figsize=(10, 10))
             plt.subplot(3, 1, 1)
             plt.title("F Score")
-            sns.barplot(x="F Score", y="Features", data=self.f_regression_df.sort_values(
-                by="F Score", ascending=False))
+            sns.barplot(x="Features", y="F Score", data=self.f_regression_df.sort_values(
+                by="F Score", ascending=False), order=self.f_regression_df.sort_values(
+                by="F Score", ascending=False)["Features"])
             plt.subplot(3, 1, 2)
             plt.title("R Score")
-            sns.barplot(x="R Score", y="Features", data=self.r_regression_df.sort_values(
-                by="R Score", ascending=False))
+            sns.barplot(x="Features", y="R Score", data=self.r_regression_df.sort_values(
+                by="R Score", ascending=False), order=self.r_regression_df.sort_values(
+                by="R Score", ascending=False)["Features"])
             plt.subplot(3, 1, 3)
             plt.title("Mutual Information Score")
-            sns.barplot(x="Mutual Information Score", y="Features",
-                        data=self.mutual_info_regression_df.sort_values(by="Mutual Information Score", ascending=False))
+            sns.barplot(x="Features", y="Mutual Information Score", data=self.mutual_info_regression_df.sort_values(
+                by="Mutual Information Score", ascending=False), order=self.mutual_info_regression_df.sort_values(by="Mutual Information Score",
+                                                                                                                  ascending=False)["Features"])
             plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=3.0)
             plt.show()
 

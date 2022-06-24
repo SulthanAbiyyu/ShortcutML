@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name='shortcutml',
     packages=['shortcutml.model_selection',
-              'shortcutml.preprocessing', 
+              'shortcutml.preprocessing',
               'shortcutml.feature_selection'],
     package_dir={
         "shortcutml": "./shortcutml",
     },
-    version='0.7',
+    version='0.8',
 
     license='MIT',
     description='Machine learning baseline prototyping tools',
@@ -21,7 +21,7 @@ setuptools.setup(
     author_email='sabiyyuhakim@student.ub.ac.id',
     url='https://github.com/SulthanAbiyyu/ShortcutML',
 
-    download_url='https://github.com/SulthanAbiyyu/ShortcutML/archive/refs/tags/0.7.tar.gz',
+    download_url='https://github.com/SulthanAbiyyu/ShortcutML/archive/refs/tags/0.8.tar.gz',
 
     keywords=['machine learning', 'summary'],
     install_requires=[

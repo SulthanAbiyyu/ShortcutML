@@ -6,7 +6,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name='shortcutml',
     packages=['shortcutml.model_selection',
-              'shortcutml.preprocessing', ],
+              'shortcutml.preprocessing', 
+              'shortcutml.feature_selection'],
     package_dir={
         "shortcutml": "./shortcutml",
     },
